@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjet-styles {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-btn {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: rgb(249, 20, 43);
+    color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: #ffffff -1px 1px, #ffffff -2px 2px, #ffffff -3px 3px, #ffffff -4px 4px, #ffffff -5px 5px, #ffffff -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    margin-left: 15px;
+}
+
+.btn:active {
+    transform: translateY(3px);
+}
+
+.animation {
+    animation: colors 1s ease-in-out infinite;
+}
+
+@keyframes colors {
+    0% {color: white;}
+    25% {color: crimson;}
+    50% {color: darkgoldenrod;}
+    75% {color: rgb(44, 248, 61);}
+    100% {color: white;}
+}
+
+@media screen and (max-width: 500px) {
+    .tarjet-styles {
+        width: 60%;
+        height: 30%;
+        font-size: x-small;
+    }
+    .container-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        box-shadow: none;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+
